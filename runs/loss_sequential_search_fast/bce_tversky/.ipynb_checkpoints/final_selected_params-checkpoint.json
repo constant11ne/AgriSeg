@@ -1,0 +1,7 @@
+{
+  "mode": "bce_tversky",
+  "bce_weight": 0.17,
+  "tversky_weight": 0.83,
+  "tversky_alpha": 0.75,
+  "tversky_beta": 0.25
+}

@@ -1,0 +1,107 @@
+LOSS SENSITIVITY ANALYSIS
+================================================================================
+Input file: runs/loss_sensitivity_v2/summary_repeats.csv
+Target metric: best_miou
+
+How repeats are used:
+- Repeated runs are kept as separate rows and used directly in regression.
+- This preserves variance information from the triple runs.
+
+LOSS MODE: soft_bce_dice
+--------------------------------------------------------------------------------
+Rows used (including repeats): 81
+Unique configurations: 27
+Hyperparameters analyzed: ['dice_smooth', 'mix_weight', 'soft_bce_smooth']
+Best configuration: soft_bce_dice__mix_weight-0.2__dice_smooth-1e-05__soft_bce_smooth-0.1
+Best mean best_miou: 0.153498 ± 0.012218 (n=3)
+Model formula: target_metric ~ dice_smooth + mix_weight + soft_bce_smooth + dice_smooth:mix_weight + dice_smooth:soft_bce_smooth + mix_weight:soft_bce_smooth
+R^2=0.794027
+Adjusted R^2=0.777326
+Interaction strength (heuristic): weak
+Top terms by absolute standardized coefficient:
+  mix_weight: coef=-0.025147, abs_coef=0.025147, p=5.09182e-27, stderr=0.001494, t=-16.836290
+  dice_smooth[0] × mix_weight: coef=-0.000646, abs_coef=0.000646, p=0.389893, stderr=0.000747, t=-0.864893
+  dice_smooth[1] × mix_weight: coef=-0.000646, abs_coef=0.000646, p=0.389893, stderr=0.000747, t=-0.864893
+  soft_bce_smooth[0]: coef=+0.000520, abs_coef=0.000520, p=0.488062, stderr=0.000747, t=0.696878
+  soft_bce_smooth[1]: coef=+0.000520, abs_coef=0.000520, p=0.488062, stderr=0.000747, t=0.696878
+  dice_smooth[1] × soft_bce_smooth[1]: coef=+0.000265, abs_coef=0.000265, p=0.480251, stderr=0.000373, t=0.709489
+  dice_smooth[1] × soft_bce_smooth[0]: coef=+0.000265, abs_coef=0.000265, p=0.480251, stderr=0.000373, t=0.709489
+  dice_smooth[0] × soft_bce_smooth[1]: coef=+0.000265, abs_coef=0.000265, p=0.480251, stderr=0.000373, t=0.709489
+  dice_smooth[0] × soft_bce_smooth[0]: coef=+0.000265, abs_coef=0.000265, p=0.480251, stderr=0.000373, t=0.709489
+  mix_weight × soft_bce_smooth[0]: coef=+0.000194, abs_coef=0.000194, p=0.796193, stderr=0.000747, t=0.259209
+
+LOSS MODE: bce_dice
+--------------------------------------------------------------------------------
+Rows used (including repeats): 27
+Unique configurations: 9
+Hyperparameters analyzed: ['dice_smooth', 'mix_weight']
+Best configuration: bce_dice__mix_weight-0.2__dice_smooth-1e-05
+Best mean best_miou: 0.137056 ± 0.018752 (n=3)
+Model formula: target_metric ~ dice_smooth + mix_weight + dice_smooth:mix_weight
+R^2=0.827768
+Adjusted R^2=0.805303
+Interaction strength (heuristic): weak
+Top terms by absolute standardized coefficient:
+  mix_weight: coef=-0.024389, abs_coef=0.024389, p=3.20129e-10, stderr=0.002330, t=-10.468298
+  dice_smooth[1] × mix_weight: coef=-0.001110, abs_coef=0.001110, p=0.350472, stderr=0.001165, t=-0.953054
+  dice_smooth[0] × mix_weight: coef=-0.001110, abs_coef=0.001110, p=0.350472, stderr=0.001165, t=-0.953054
+  dice_smooth[0]: coef=-0.000253, abs_coef=0.000253, p=0.829964, stderr=0.001165, t=-0.217205
+  dice_smooth[1]: coef=-0.000253, abs_coef=0.000253, p=0.829964, stderr=0.001165, t=-0.217205
+
+LOSS MODE: focal_tversky_mix
+--------------------------------------------------------------------------------
+Rows used (including repeats): 81
+Unique configurations: 27
+Hyperparameters analyzed: ['alpha', 'beta', 'gamma', 'mix_weight']
+Best configuration: focal_tversky_mix__mix_weight-0.2__alpha-0.5__gamma-1__beta-0.5
+Best mean best_miou: 0.142099 ± 0.010212 (n=3)
+Model formula: target_metric ~ alpha + beta + gamma + mix_weight + alpha:beta + alpha:gamma + alpha:mix_weight + beta:gamma + beta:mix_weight + gamma:mix_weight
+R^2=0.759179
+Adjusted R^2=0.736087
+Interaction strength (heuristic): moderate
+Top terms by absolute standardized coefficient:
+  mix_weight: coef=-0.019506, abs_coef=0.019506, p=2.29665e-21, stderr=0.001455, t=-13.402618
+  gamma × mix_weight: coef=+0.005335, abs_coef=0.005335, p=0.00046557, stderr=0.001455, t=3.665315
+  beta: coef=-0.004262, abs_coef=0.004262, p=1.25783e-07, stderr=0.000728, t=-5.856421
+  alpha: coef=+0.004262, abs_coef=0.004262, p=1.25783e-07, stderr=0.000728, t=5.856421
+  gamma: coef=+0.001602, abs_coef=0.001602, p=0.274693, stderr=0.001455, t=1.100585
+  beta × gamma: coef=-0.000885, abs_coef=0.000885, p=0.227596, stderr=0.000728, t=-1.216809
+  alpha × gamma: coef=+0.000885, abs_coef=0.000885, p=0.227596, stderr=0.000728, t=1.216809
+  alpha × beta: coef=+0.000338, abs_coef=0.000338, p=0.869831, stderr=0.002058, t=0.164450
+  alpha × mix_weight: coef=+0.000161, abs_coef=0.000161, p=0.825695, stderr=0.000728, t=0.221019
+  beta × mix_weight: coef=-0.000161, abs_coef=0.000161, p=0.825695, stderr=0.000728, t=-0.221019
+
+LOSS MODE: dice_focal
+--------------------------------------------------------------------------------
+Rows used (including repeats): 27
+Unique configurations: 9
+Hyperparameters analyzed: ['gamma', 'mix_weight']
+Best configuration: dice_focal__mix_weight-0.8__gamma-1
+Best mean best_miou: 0.132858 ± 0.005989 (n=3)
+Model formula: target_metric ~ gamma + mix_weight + gamma:mix_weight
+R^2=0.742186
+Adjusted R^2=0.708558
+Interaction strength (heuristic): weak
+Top terms by absolute standardized coefficient:
+  mix_weight: coef=+0.019124, abs_coef=0.019124, p=3.56454e-08, stderr=0.002365, t=8.086526
+  gamma: coef=-0.002075, abs_coef=0.002075, p=0.389358, stderr=0.002365, t=-0.877371
+  gamma × mix_weight: coef=-0.000528, abs_coef=0.000528, p=0.82532, stderr=0.002365, t=-0.223240
+
+LOSS MODE: bce_tversky
+--------------------------------------------------------------------------------
+Rows used (including repeats): 27
+Unique configurations: 9
+Hyperparameters analyzed: ['alpha', 'beta', 'mix_weight']
+Best configuration: bce_tversky__mix_weight-0.2__alpha-0.8__beta-0.2
+Best mean best_miou: 0.147785 ± 0.008183 (n=3)
+Model formula: target_metric ~ alpha + beta + mix_weight + alpha:beta + alpha:mix_weight + beta:mix_weight
+R^2=0.879395
+Adjusted R^2=0.857467
+Interaction strength (heuristic): weak
+Top terms by absolute standardized coefficient:
+  mix_weight: coef=-0.030159, abs_coef=0.030159, p=1.76299e-11, stderr=0.002410, t=-12.516271
+  beta: coef=-0.002227, abs_coef=0.002227, p=0.0780428, stderr=0.001205, t=-1.848325
+  alpha: coef=+0.002227, abs_coef=0.002227, p=0.0780428, stderr=0.001205, t=1.848325
+  alpha × beta: coef=+0.001724, abs_coef=0.001724, p=0.617936, stderr=0.003408, t=0.505932
+  beta × mix_weight: coef=+0.000350, abs_coef=0.000350, p=0.774233, stderr=0.001205, t=0.290397
+  alpha × mix_weight: coef=-0.000350, abs_coef=0.000350, p=0.774233, stderr=0.001205, t=-0.290397

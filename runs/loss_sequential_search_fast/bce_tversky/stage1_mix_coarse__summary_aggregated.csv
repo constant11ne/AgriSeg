@@ -1,0 +1,8 @@
+candidate_name,target_mean,target_std,repeats,stage_name,loss_name,params_json,robust_score
+bce_tversky__mix_weight-0.12__alpha-0.8__beta-0.2,0.11301840194956925,0.015663844994680983,2,stage1_mix_coarse,bce_tversky,"{""alpha"": 0.8, ""beta"": 0.2, ""mix_weight"": 0.12}",0.109102440700899
+bce_tversky__mix_weight-0.08__alpha-0.8__beta-0.2,0.10500951120302979,,1,stage1_mix_coarse,bce_tversky,"{""alpha"": 0.8, ""beta"": 0.2, ""mix_weight"": 0.08}",0.10500951120302979
+bce_tversky__mix_weight-0.16__alpha-0.8__beta-0.2,0.09894933042880563,0.012670668419003616,2,stage1_mix_coarse,bce_tversky,"{""alpha"": 0.8, ""beta"": 0.2, ""mix_weight"": 0.16}",0.09578166332405473
+bce_tversky__mix_weight-0.24__alpha-0.8__beta-0.2,0.08461077442727627,,1,stage1_mix_coarse,bce_tversky,"{""alpha"": 0.8, ""beta"": 0.2, ""mix_weight"": 0.24}",0.08461077442727627
+bce_tversky__mix_weight-0.2__alpha-0.8__beta-0.2,0.08273132505683392,,1,stage1_mix_coarse,bce_tversky,"{""alpha"": 0.8, ""beta"": 0.2, ""mix_weight"": 0.2}",0.08273132505683392
+bce_tversky__mix_weight-0.28__alpha-0.8__beta-0.2,0.07939640599943702,,1,stage1_mix_coarse,bce_tversky,"{""alpha"": 0.8, ""beta"": 0.2, ""mix_weight"": 0.28}",0.07939640599943702
+bce_tversky__mix_weight-0.35__alpha-0.8__beta-0.2,0.0611313062811328,,1,stage1_mix_coarse,bce_tversky,"{""alpha"": 0.8, ""beta"": 0.2, ""mix_weight"": 0.35}",0.0611313062811328

@@ -1,0 +1,8 @@
+candidate_name,target_mean,target_std,repeats,stage_name,loss_name,params_json,robust_score
+bce_dice__mix_weight-0.12__dice_smooth-1e-05,0.10878720451162319,0.00527473634893727,2,stage1_mix_coarse,bce_dice,"{""dice_smooth"": 1e-05, ""mix_weight"": 0.12}",0.10746852042438887
+bce_dice__mix_weight-0.16__dice_smooth-1e-05,0.098286351666305,,1,stage1_mix_coarse,bce_dice,"{""dice_smooth"": 1e-05, ""mix_weight"": 0.16}",0.098286351666305
+bce_dice__mix_weight-0.24__dice_smooth-1e-05,0.0975270639818579,,1,stage1_mix_coarse,bce_dice,"{""dice_smooth"": 1e-05, ""mix_weight"": 0.24}",0.0975270639818579
+bce_dice__mix_weight-0.08__dice_smooth-1e-05,0.09854769120519943,0.016359478838000523,2,stage1_mix_coarse,bce_dice,"{""dice_smooth"": 1e-05, ""mix_weight"": 0.08}",0.0944578214956993
+bce_dice__mix_weight-0.28__dice_smooth-1e-05,0.09350028472101961,,1,stage1_mix_coarse,bce_dice,"{""dice_smooth"": 1e-05, ""mix_weight"": 0.28}",0.09350028472101961
+bce_dice__mix_weight-0.2__dice_smooth-1e-05,0.08207395857944134,,1,stage1_mix_coarse,bce_dice,"{""dice_smooth"": 1e-05, ""mix_weight"": 0.2}",0.08207395857944134
+bce_dice__mix_weight-0.35__dice_smooth-1e-05,0.07241040612557949,,1,stage1_mix_coarse,bce_dice,"{""dice_smooth"": 1e-05, ""mix_weight"": 0.35}",0.07241040612557949

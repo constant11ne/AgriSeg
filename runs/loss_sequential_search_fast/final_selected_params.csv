@@ -1,0 +1,5 @@
+loss_name,final_params_json,mode,bce_weight,dice_weight,dice_smooth,soft_bce_smooth,focal_weight,focal_gamma,tversky_weight,tversky_alpha,tversky_beta
+soft_bce_dice,"{""bce_weight"": 0.12, ""dice_smooth"": 1e-05, ""dice_weight"": 0.88, ""mode"": ""soft_bce_dice"", ""soft_bce_smooth"": 0.0}",soft_bce_dice,0.12,0.88,1e-05,0.0,,,,,
+bce_dice,"{""bce_weight"": 0.15, ""dice_smooth"": 3e-05, ""dice_weight"": 0.85, ""mode"": ""bce_dice""}",bce_dice,0.15,0.85,3e-05,,,,,,
+dice_focal,"{""dice_weight"": 0.82, ""focal_gamma"": 1.0, ""focal_weight"": 0.18000000000000005, ""mode"": ""dice_focal""}",dice_focal,,0.82,,,0.18000000000000005,1.0,,,
+bce_tversky,"{""bce_weight"": 0.105, ""mode"": ""bce_tversky"", ""tversky_alpha"": 0.6, ""tversky_beta"": 0.4, ""tversky_weight"": 0.895}",bce_tversky,0.105,,,,,,0.895,0.6,0.4
