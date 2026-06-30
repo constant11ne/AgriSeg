@@ -1,6 +1,0 @@
-{
-  "mode": "dice_focal",
-  "dice_weight": 0.82,
-  "focal_weight": 0.18000000000000005,
-  "focal_gamma": 1.0
-}

@@ -1,9 +1,0 @@
-{
-  "best_miou": 0.4723882075051755,
-  "best_epoch": 11,
-  "last_miou": 0.45439589468056635,
-  "epoch_of_best": 11,
-  "collapse_flag": false,
-  "epochs": 30,
-  "exp_dir": "runs/baseline_cv/fold_0/fpn_timm-efficientnet-b4_rgb_early_concat_copyr_soft_bce_dice"
-}

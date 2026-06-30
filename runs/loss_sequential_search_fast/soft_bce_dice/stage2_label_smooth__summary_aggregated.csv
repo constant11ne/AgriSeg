@@ -1,5 +1,0 @@
-candidate_name,target_mean,target_std,repeats,stage_name,loss_name,params_json,robust_score
-soft_bce_dice__mix_weight-0.12__dice_smooth-1e-05__soft_bce_smooth-0,0.10788725350783152,0.010276882819543372,2,stage2_label_smooth,soft_bce_dice,"{""dice_smooth"": 1e-05, ""mix_weight"": 0.12, ""soft_bce_smooth"": 0.0}",0.10531803280294567
-soft_bce_dice__mix_weight-0.12__dice_smooth-1e-05__soft_bce_smooth-0.1,0.10596497430959717,0.01341650680093295,2,stage2_label_smooth,soft_bce_dice,"{""dice_smooth"": 1e-05, ""mix_weight"": 0.12, ""soft_bce_smooth"": 0.1}",0.10261084760936394
-soft_bce_dice__mix_weight-0.12__dice_smooth-1e-05__soft_bce_smooth-0.15,0.09432130854060815,,1,stage2_label_smooth,soft_bce_dice,"{""dice_smooth"": 1e-05, ""mix_weight"": 0.12, ""soft_bce_smooth"": 0.15}",0.09432130854060815
-soft_bce_dice__mix_weight-0.12__dice_smooth-1e-05__soft_bce_smooth-0.05,0.08236630601107957,,1,stage2_label_smooth,soft_bce_dice,"{""dice_smooth"": 1e-05, ""mix_weight"": 0.12, ""soft_bce_smooth"": 0.05}",0.08236630601107957

@@ -1,9 +1,0 @@
-{
-  "best_miou": 0.2715808020944742,
-  "best_epoch": 12,
-  "last_miou": 0.2715808020944742,
-  "epoch_of_best": 12,
-  "collapse_flag": false,
-  "epochs": 12,
-  "exp_dir": "runs/fpn_timm-efficientnet-b4_adapter_adapter_residual_freeze_partial_last2_soft_bce_dice_nirw1p0"
-}

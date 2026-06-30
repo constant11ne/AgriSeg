@@ -1,9 +1,0 @@
-{
-  "best_miou": 0.5089410363592952,
-  "best_epoch": 28,
-  "last_miou": 0.505180373726693,
-  "epoch_of_best": 28,
-  "collapse_flag": false,
-  "epochs": 30,
-  "exp_dir": "runs/augmentations_full_1fold/fold_0/fpn_timm-efficientnet-b4_mid_progressive_concat_soft_bce_dice_8_16_32_64_128"
-}

@@ -1,9 +1,0 @@
-{
-  "best_miou": 0.49854732897122767,
-  "best_epoch": 1,
-  "last_miou": 0.47042323134112224,
-  "epoch_of_best": 1,
-  "collapse_flag": false,
-  "epochs": 30,
-  "exp_dir": "runs/baseline_cv/fold_0/fpn_timm-efficientnet-b4_late_late_weighted_soft_bce_dice"
-}

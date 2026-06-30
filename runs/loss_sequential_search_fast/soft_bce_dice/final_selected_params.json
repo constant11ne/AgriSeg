@@ -1,7 +1,0 @@
-{
-  "mode": "soft_bce_dice",
-  "bce_weight": 0.12,
-  "dice_weight": 0.88,
-  "dice_smooth": 1e-05,
-  "soft_bce_smooth": 0.0
-}

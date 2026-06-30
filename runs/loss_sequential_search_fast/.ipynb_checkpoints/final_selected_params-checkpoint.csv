@@ -1,4 +1,0 @@
-loss_name,final_params_json,mode,bce_weight,dice_weight,dice_smooth,tversky_weight,tversky_alpha,tversky_beta,focal_weight,focal_gamma
-bce_dice,"{""bce_weight"": 0.16, ""dice_smooth"": 3e-06, ""dice_weight"": 0.84, ""mode"": ""bce_dice""}",bce_dice,0.16,0.84,3e-06,,,,,
-bce_tversky,"{""bce_weight"": 0.17, ""mode"": ""bce_tversky"", ""tversky_alpha"": 0.75, ""tversky_beta"": 0.25, ""tversky_weight"": 0.83}",bce_tversky,0.17,,,0.83,0.75,0.25,,
-dice_focal,"{""dice_weight"": 0.82, ""focal_gamma"": 1.0, ""focal_weight"": 0.18000000000000005, ""mode"": ""dice_focal""}",dice_focal,,0.82,,,,,0.18000000000000005,1.0

@@ -1,5 +1,0 @@
-candidate_name,target_mean,target_std,repeats,stage_name,loss_name,params_json,robust_score
-bce_tversky__mix_weight-0.12__alpha-0.6__beta-0.4,0.11914974723003555,,1,stage2_alpha,bce_tversky,"{""alpha"": 0.6, ""beta"": 0.4, ""mix_weight"": 0.12}",0.11914974723003555
-bce_tversky__mix_weight-0.12__alpha-0.85__beta-0.15,0.11374721992091424,0.010309238739386214,2,stage2_alpha,bce_tversky,"{""alpha"": 0.85, ""beta"": 0.15000000000000002, ""mix_weight"": 0.12}",0.11116991023606769
-bce_tversky__mix_weight-0.12__alpha-0.92__beta-0.08,0.10937457369953515,0.018022412777636145,2,stage2_alpha,bce_tversky,"{""alpha"": 0.92, ""beta"": 0.07999999999999996, ""mix_weight"": 0.12}",0.10486897050512611
-bce_tversky__mix_weight-0.12__alpha-0.75__beta-0.25,0.09394931804819508,,1,stage2_alpha,bce_tversky,"{""alpha"": 0.75, ""beta"": 0.25, ""mix_weight"": 0.12}",0.09394931804819508

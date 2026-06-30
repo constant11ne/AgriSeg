@@ -1,9 +1,0 @@
-{
-  "best_miou": 0.47564697702264147,
-  "best_epoch": 18,
-  "last_miou": 0.44414882892488605,
-  "epoch_of_best": 18,
-  "collapse_flag": false,
-  "epochs": 35,
-  "exp_dir": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_nir_early_concat_copyr_soft_bce_dice_ndvi"
-}
