@@ -1,0 +1,7 @@
+candidate_name,target_mean,target_std,repeats,stage_name,loss_name,params_json,robust_score
+dice_focal__mix_weight-0.84__gamma-1,0.10671931996104332,0.007072669303570813,2,stage1_mix_coarse,dice_focal,"{""gamma"": 1.0, ""mix_weight"": 0.84}",0.10495115263515062
+dice_focal__mix_weight-0.9__gamma-1,0.09812506985220927,,1,stage1_mix_coarse,dice_focal,"{""gamma"": 1.0, ""mix_weight"": 0.9}",0.09812506985220927
+dice_focal__mix_weight-0.95__gamma-1,0.08797826163433714,,1,stage1_mix_coarse,dice_focal,"{""gamma"": 1.0, ""mix_weight"": 0.95}",0.08797826163433714
+dice_focal__mix_weight-0.78__gamma-1,0.08557879037209996,,1,stage1_mix_coarse,dice_focal,"{""gamma"": 1.0, ""mix_weight"": 0.78}",0.08557879037209996
+dice_focal__mix_weight-0.72__gamma-1,0.08642203369506515,0.01719313531445392,2,stage1_mix_coarse,dice_focal,"{""gamma"": 1.0, ""mix_weight"": 0.72}",0.08212374986645167
+dice_focal__mix_weight-0.65__gamma-1,0.0767812970204741,,1,stage1_mix_coarse,dice_focal,"{""gamma"": 1.0, ""mix_weight"": 0.65}",0.0767812970204741

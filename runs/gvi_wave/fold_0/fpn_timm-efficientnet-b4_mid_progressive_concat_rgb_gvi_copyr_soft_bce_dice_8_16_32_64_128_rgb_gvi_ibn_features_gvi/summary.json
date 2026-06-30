@@ -1,0 +1,9 @@
+{
+  "best_miou": 0.5524507990170884,
+  "best_epoch": 34,
+  "last_miou": 0.5521270566803008,
+  "epoch_of_best": 34,
+  "collapse_flag": false,
+  "epochs": 35,
+  "exp_dir": "runs/gvi_wave/fold_0/fpn_timm-efficientnet-b4_mid_progressive_concat_rgb_gvi_copyr_soft_bce_dice_8_16_32_64_128_rgb_gvi_ibn_features_gvi"
+}
