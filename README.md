@@ -254,94 +254,7 @@ mIoU = 0.5532
 
 ---
 
-## 6. Как запускать эксперименты
-
-### 6.1 Full GVI wave
-
-Запускаемые эксперименты:
-
-```text
-gvi_only
-early_rgb_gvi
-mid_rgb_gvi
-mid_rgb_gvi_ibn
-```
-
-Команда полного запуска:
-
-```bash
-python -m notebooks.experiments_gvi \
-  --processed-root ../AgricultureVision_baseline_3fold \
-  --encoder timm-efficientnet-b4 \
-  --model fpn \
-  --epochs 35 \
-  --batch-size 16 \
-  --img-size 256 256 \
-  --runs-dir runs/gvi_wave \
-  --rgb-source-runs-dir runs/augmentations_full_1fold \
-  --ndvi-source-runs-dir runs/ndvi_wave2 \
-  --extra-train-flags "--max-grad-norm 0.8 --num-workers 8 --prefetch-factor 4 --save-every 1000"
-```
-
-Smoke test:
-
-```bash
-python -m notebooks.experiments_gvi \
-  --processed-root ../AgricultureVision_baseline_3fold \
-  --encoder timm-efficientnet-b4 \
-  --model fpn \
-  --epochs 1 \
-  --batch-size 16 \
-  --img-size 256 256 \
-  --runs-dir runs/gvi_wave \
-  --rgb-source-runs-dir runs/augmentations_full_1fold \
-  --ndvi-source-runs-dir runs/ndvi_wave2 \
-  --extra-train-flags "--max-grad-norm 0.8 --num-workers 8 --prefetch-factor 4 --save-every 1000 --max-train-steps-per-epoch 10 --max-val-steps-per-epoch 5"
-```
-
-### 6.2 Multi-GVI wave
-
-Запускаемые эксперименты:
-
-```text
-mid_rgb_multigvi2_ibn
-mid_rgb_multigvi3_ibn
-mid_rgb_multigvi4_ibn
-```
-
-Команда полного запуска:
-
-```bash
-python -m notebooks.experiments_multi_gvi \
-  --processed-root ../AgricultureVision_baseline_3fold \
-  --encoder timm-efficientnet-b4 \
-  --model fpn \
-  --epochs 35 \
-  --batch-size 16 \
-  --img-size 256 256 \
-  --runs-dir runs/multi_gvi_wave \
-  --rgb-source-runs-dir runs/augmentations_full_1fold \
-  --extra-train-flags "--max-grad-norm 0.8 --num-workers 8 --prefetch-factor 4 --save-every 1000"
-```
-
-Smoke test:
-
-```bash
-python -m notebooks.experiments_multi_gvi \
-  --processed-root ../AgricultureVision_baseline_3fold \
-  --encoder timm-efficientnet-b4 \
-  --model fpn \
-  --epochs 1 \
-  --batch-size 16 \
-  --img-size 256 256 \
-  --runs-dir runs/multi_gvi_wave \
-  --rgb-source-runs-dir runs/augmentations_full_1fold \
-  --extra-train-flags "--max-grad-norm 0.8 --num-workers 8 --prefetch-factor 4 --save-every 1000 --max-train-steps-per-epoch 10 --max-val-steps-per-epoch 5"
-```
-
----
-
-## 7. Структура кода
+## 6. Структура кода
 
 ```text
 src/train.py
@@ -374,37 +287,8 @@ notebooks/experiments_ndvi_wave2_ibn.py
 
 ---
 
-## 8. Рекомендуемые следующие шаги
 
-Дальше лучше не просто добавлять новые raw-каналы, а стабилизировать и проверить лучший GVI-результат.
-
-Рекомендуемый порядок:
-
-1. Запустить `mid_rgb_gvi_ibn` на 3 seeds или 3 folds.
-2. Сравнить с `mid_rgb_ndvi_ibn` на тех же seeds/folds.
-3. Добавить threshold tuning по классам.
-4. Добавить TTA для `mid_rgb_gvi_ibn`.
-5. Попробовать ensemble из моделей:
-
-```text
-mid_rgb_gvi_ibn
-early_rgb_gvi
-mid_rgb_ndvi_ibn
-```
-
-6. Если возвращаться к Multi-GVI, не стоит просто увеличивать число каналов. Лучше попробовать:
-
-```text
-multi_gvi_only pretraining
-lower LR for GVI module
-channel attention over GVI channels
-orthogonality/decorrelation loss between GVI channels
-freeze GVI channels for first few epochs
-```
-
----
-
-## 9. Краткий итог
+## 7. Краткий итог
 
 Лучший результат на текущем наборе экспериментов:
 
