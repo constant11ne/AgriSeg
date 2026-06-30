@@ -1,0 +1,54 @@
+[
+  {
+    "fold": 0,
+    "experiment": "early_rgb_ndvi",
+    "run_dir": "runs/ndvi_wave2/fold_0/fpn_timm-efficientnet-b4_early_early_rgb_ndvi_copyr_soft_bce_dice_ndvi",
+    "best_ckpt": "runs/ndvi_wave2/fold_0/fpn_timm-efficientnet-b4_early_early_rgb_ndvi_copyr_soft_bce_dice_ndvi/best.pth",
+    "best_miou": 0.47008647437118195,
+    "best_epoch": 14,
+    "last_miou": 0.40682225102062675,
+    "epoch_of_best": 14,
+    "collapse_flag": false,
+    "epochs": 35,
+    "exp_dir": "runs/ndvi_wave2/fold_0/fpn_timm-efficientnet-b4_early_early_rgb_ndvi_copyr_soft_bce_dice_ndvi"
+  },
+  {
+    "fold": 0,
+    "experiment": "ndvi_only",
+    "run_dir": "runs/ndvi_wave2/fold_0/fpn_timm-efficientnet-b4_ndvi_early_concat_copyr_soft_bce_dice_ndvi",
+    "best_ckpt": "runs/ndvi_wave2/fold_0/fpn_timm-efficientnet-b4_ndvi_early_concat_copyr_soft_bce_dice_ndvi/best.pth",
+    "best_miou": 0.4339797847647876,
+    "best_epoch": 35,
+    "last_miou": 0.4339797847647876,
+    "epoch_of_best": 35,
+    "collapse_flag": false,
+    "epochs": 35,
+    "exp_dir": "runs/ndvi_wave2/fold_0/fpn_timm-efficientnet-b4_ndvi_early_concat_copyr_soft_bce_dice_ndvi"
+  },
+  {
+    "fold": 0,
+    "experiment": "mid_rgb_nir_ndvi",
+    "run_dir": "runs/ndvi_wave2/fold_0/fpn_timm-efficientnet-b4_mid_progressive_concat_rgb_nir_ndvi_soft_bce_dice_8_16_32_64_128_ndvi",
+    "best_ckpt": "runs/ndvi_wave2/fold_0/fpn_timm-efficientnet-b4_mid_progressive_concat_rgb_nir_ndvi_soft_bce_dice_8_16_32_64_128_ndvi/best.pth",
+    "best_miou": 0.5243729016685681,
+    "best_epoch": 2,
+    "last_miou": 0.4428039469638209,
+    "epoch_of_best": 2,
+    "collapse_flag": false,
+    "epochs": 35,
+    "exp_dir": "runs/ndvi_wave2/fold_0/fpn_timm-efficientnet-b4_mid_progressive_concat_rgb_nir_ndvi_soft_bce_dice_8_16_32_64_128_ndvi"
+  },
+  {
+    "fold": 0,
+    "experiment": "mid_rgb_ndvi",
+    "run_dir": "runs/ndvi_wave2/fold_0/fpn_timm-efficientnet-b4_mid_progressive_concat_rgb_ndvi_soft_bce_dice_8_16_32_64_128_ndvi",
+    "best_ckpt": "runs/ndvi_wave2/fold_0/fpn_timm-efficientnet-b4_mid_progressive_concat_rgb_ndvi_soft_bce_dice_8_16_32_64_128_ndvi/best.pth",
+    "best_miou": 0.5342938659685871,
+    "best_epoch": 32,
+    "last_miou": 0.5258761677318483,
+    "epoch_of_best": 32,
+    "collapse_flag": false,
+    "epochs": 35,
+    "exp_dir": "runs/ndvi_wave2/fold_0/fpn_timm-efficientnet-b4_mid_progressive_concat_rgb_ndvi_soft_bce_dice_8_16_32_64_128_ndvi"
+  }
+]

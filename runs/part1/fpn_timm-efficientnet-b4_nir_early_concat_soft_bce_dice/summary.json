@@ -1,0 +1,9 @@
+{
+  "best_miou": 0.29888131645538807,
+  "best_epoch": 7,
+  "last_miou": 0.295347597973069,
+  "epoch_of_best": 7,
+  "collapse_flag": false,
+  "epochs": 8,
+  "exp_dir": "runs/fpn_timm-efficientnet-b4_nir_early_concat_soft_bce_dice"
+}

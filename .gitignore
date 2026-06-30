@@ -37,8 +37,6 @@ datasets/
 models/
 checkpoints/
 outputs/
-runs/
-wandb/
 mlruns/
 
 # Archives

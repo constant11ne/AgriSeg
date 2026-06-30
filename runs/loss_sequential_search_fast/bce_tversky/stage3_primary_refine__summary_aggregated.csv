@@ -1,0 +1,6 @@
+candidate_name,target_mean,target_std,repeats,stage_name,loss_name,params_json,robust_score
+bce_tversky__mix_weight-0.105__alpha-0.6__beta-0.4,0.12662234119324214,0.005721998340019949,2,stage3_primary_refine,bce_tversky,"{""alpha"": 0.6, ""beta"": 0.4, ""mix_weight"": 0.105}",0.12519184160823715
+bce_tversky__mix_weight-0.12__alpha-0.6__beta-0.4,0.1196464070058845,0.0005061521505500549,2,stage3_primary_refine,bce_tversky,"{""alpha"": 0.6, ""beta"": 0.4, ""mix_weight"": 0.12}",0.11951986896824698
+bce_tversky__mix_weight-0.09__alpha-0.6__beta-0.4,0.11737985551768476,,1,stage3_primary_refine,bce_tversky,"{""alpha"": 0.6, ""beta"": 0.4, ""mix_weight"": 0.09}",0.11737985551768476
+bce_tversky__mix_weight-0.135__alpha-0.6__beta-0.4,0.10384452485986187,,1,stage3_primary_refine,bce_tversky,"{""alpha"": 0.6, ""beta"": 0.4, ""mix_weight"": 0.135}",0.10384452485986187
+bce_tversky__mix_weight-0.15__alpha-0.6__beta-0.4,0.10147969358887939,,1,stage3_primary_refine,bce_tversky,"{""alpha"": 0.6, ""beta"": 0.4, ""mix_weight"": 0.15}",0.10147969358887939

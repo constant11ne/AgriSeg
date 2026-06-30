@@ -1,0 +1,58 @@
+[
+  {
+    "fold": 0,
+    "experiment": "early_concat_rgb_nir_ndvi",
+    "run_dir": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_early_early_concat_copyr_soft_bce_dice_ndvi",
+    "best_ckpt": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_early_early_concat_copyr_soft_bce_dice_ndvi/best.pth",
+    "rgb_source_ckpt": "runs/augmentations_full_1fold/fold_0/fpn_timm-efficientnet-b4_rgb_early_concat_copyr_soft_bce_dice/best.pth",
+    "best_miou": 0.4691377559209962,
+    "best_epoch": 33,
+    "last_miou": 0.45574389705775975,
+    "epoch_of_best": 33,
+    "collapse_flag": false,
+    "epochs": 35,
+    "exp_dir": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_early_early_concat_copyr_soft_bce_dice_ndvi"
+  },
+  {
+    "fold": 0,
+    "experiment": "nir_ndvi_only",
+    "run_dir": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_nir_early_concat_copyr_soft_bce_dice_ndvi",
+    "best_ckpt": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_nir_early_concat_copyr_soft_bce_dice_ndvi/best.pth",
+    "rgb_source_ckpt": "runs/augmentations_full_1fold/fold_0/fpn_timm-efficientnet-b4_rgb_early_concat_copyr_soft_bce_dice/best.pth",
+    "best_miou": 0.47564697702264147,
+    "best_epoch": 18,
+    "last_miou": 0.44414882892488605,
+    "epoch_of_best": 18,
+    "collapse_flag": false,
+    "epochs": 35,
+    "exp_dir": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_nir_early_concat_copyr_soft_bce_dice_ndvi"
+  },
+  {
+    "fold": 0,
+    "experiment": "progressive_concat_ndvi_full",
+    "run_dir": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_mid_progressive_concat_soft_bce_dice_8_16_32_64_128_ndvi",
+    "best_ckpt": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_mid_progressive_concat_soft_bce_dice_8_16_32_64_128_ndvi/best.pth",
+    "rgb_source_ckpt": "runs/augmentations_full_1fold/fold_0/fpn_timm-efficientnet-b4_rgb_early_concat_copyr_soft_bce_dice/best.pth",
+    "best_miou": 0.5011251587716278,
+    "best_epoch": 19,
+    "last_miou": 0.482430846624448,
+    "epoch_of_best": 19,
+    "collapse_flag": false,
+    "epochs": 35,
+    "exp_dir": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_mid_progressive_concat_soft_bce_dice_8_16_32_64_128_ndvi"
+  },
+  {
+    "fold": 0,
+    "experiment": "late_weighted_ndvi",
+    "run_dir": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_late_late_weighted_soft_bce_dice_ndvi",
+    "best_ckpt": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_late_late_weighted_soft_bce_dice_ndvi/best.pth",
+    "rgb_source_ckpt": "runs/augmentations_full_1fold/fold_0/fpn_timm-efficientnet-b4_rgb_early_concat_copyr_soft_bce_dice/best.pth",
+    "best_miou": 0.5196906961857058,
+    "best_epoch": 32,
+    "last_miou": 0.5159714467239778,
+    "epoch_of_best": 32,
+    "collapse_flag": false,
+    "epochs": 35,
+    "exp_dir": "runs/ndvi_full_1fold/fold_0/fpn_timm-efficientnet-b4_late_late_weighted_soft_bce_dice_ndvi"
+  }
+]
